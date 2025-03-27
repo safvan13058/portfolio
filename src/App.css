@@ -31,6 +31,55 @@ body {
 .sectionbanner{
  margin-top: 50px;
 }
+.orientation-alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.orientation-alert img {
+  margin: 10px 0;
+}
+.btn-grp{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.orientation-alert button {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.orientation-alert button:hover {
+  background: #0056b3;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+@media(max-width:400px){
+  .section {
+    min-height:fit-content;
+  }
+}
 /* #home { background: #f4f4f4; } */
 /* #about { background: #e4e4e4; }
 #services { background: #d4d4d4; }

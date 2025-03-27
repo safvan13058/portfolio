@@ -117,4 +117,16 @@
     .portfolio{
         width: 90%;
     }
+    .portfolio-grid {
+        display: grid
+    ;
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+        gap: 20px;
+        justify-content: center;
+    }
+}
+@media(max-width:400px){
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
 }

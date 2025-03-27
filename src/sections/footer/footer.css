@@ -76,3 +76,9 @@
         gap: 20px;
     }
 }
+@media(max-width:400px){
+    .footer-nav {
+        gap: 10px;
+
+    }
+}

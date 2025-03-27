@@ -72,3 +72,16 @@
     padding: 50px 5%;
   }
 }
+@media(max-width:400px){
+  .what-i-do {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+  }
+  .text-content {
+    width: 100%;
+  }
+  .cards{
+    width: 100%;
+  }
+}

@@ -160,3 +160,19 @@
     }
 }
 
+@media (max-width: 400px){
+    .about-card{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .profile {
+        width: 100%;
+        height: 280px;
+    }
+    .about{
+        height: fit-content;
+    }
+    .about-container {
+        height: fit-content;
+    }
+}

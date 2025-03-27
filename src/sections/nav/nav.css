@@ -152,7 +152,9 @@ form {
     margin: 10px 0;
     padding: 10px;
 }
-
+.menu-toggle{
+    color: var(--hero-text);
+}
 .popup-content button {
     padding: 10px 20px;
     margin-top: 10px;
@@ -229,3 +231,4 @@ form {
         padding: 10px;
     }
 }
+

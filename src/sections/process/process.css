@@ -105,4 +105,9 @@
         align-self: center !important;
     }
 }
+@media(max-width:400px){
+    .work-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 

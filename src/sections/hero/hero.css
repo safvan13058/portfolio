@@ -141,3 +141,27 @@
         font-size: 40px;
     }
 }
+@media (max-width: 400px) {
+
+    .stat {
+        min-width: 100px !important;
+        padding: 10px !important;
+    }
+    .stat:nth-child(2){
+        padding: 10px;
+    }
+    .stat h2{
+        font-size: 20px;
+    }
+    .hero-content {
+        width: 100%;
+        align-items: center;
+
+    }
+    .hero-text h1 {
+        font-size: 30px;
+    }
+    .hero-text{
+        align-self: center;
+    }
+}

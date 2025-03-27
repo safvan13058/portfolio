@@ -182,18 +182,22 @@ button:hover {
         width: 90%;
 
     }
-    .portfolio-grid {
-        display: grid
-    ;
-        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
-        gap: 20px;
-        justify-content: center;
-    }
-    
-    
+      
 }
 @media(max-width:768px){
     .contact-container{
         padding: 10px;
     }
 }
+@media(max-width:400px){
+    .contact-container{
+        padding: 10px;
+    }
+    .contact-right form {
+        width:fit-content !important;
+    }
+    .contact-info .info-box{
+        width: 100%;
+    }
+}
+
