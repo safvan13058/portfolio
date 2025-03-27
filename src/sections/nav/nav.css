@@ -173,8 +173,35 @@ form {
     align-self: flex-end;
 }
 
+@media (max-width: 900px)
+{
+    /* .navbar {
+        padding: 5px 0;
+    } */
+    .nav {
+        width: 90%;
+        justify-content: space-between;
+    }
+    .logo .img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        font-size: 15px;
+    }
+    .logo{
+        font-size: 15px;
+    }
+    .nav-links {
+        gap: 10px;
+    }
+    .nav-links a{
+        font-size: 12px
+    };
+}
+/* Navbar */
+
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 700px) {
     .menu-toggle {
         display: block;
     }

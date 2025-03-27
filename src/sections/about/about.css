@@ -125,7 +125,27 @@
     background: var( --button-bg);
     color: var(--text-light);
 }
-
+@media (max-width: 900px) {
+    .about-container{
+        width: 90%;
+    }
+    
+}
+@media (max-width: 900px) {
+    .about-container{
+        width: 90%;
+    }
+    .profile img{
+        height: 100%;
+        width: 60%;
+        /* height: 70%; */
+    }
+    .profile{
+        height: 280px;
+        
+    }
+    
+}
 /* Responsive */
 @media (max-width: 768px) {
     .about-container {
@@ -134,8 +154,9 @@
     }
     
     .social-icons {
-        position: static;
-        transform: none;
+        /* position: static; */
+        /* transform: none; */
         justify-content: center;
     }
 }
+

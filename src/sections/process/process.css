@@ -75,6 +75,14 @@
 .work-card:nth-child(4) {
     place-self: end;
 }
+@media (max-width: 900px) {
+    .work-process {
+        padding: 50px 5%;
+    }
+    .work-cards{
+        width: 70%;
+    }
+}
 /* Responsive */
 @media (max-width: 768px) {
     .work-process {
@@ -84,11 +92,17 @@
     }
 
     .work-cards {
-        grid-template-columns: 1fr;
+        width: 100%;
+        margin-top: 10px;
+        /* grid-template-columns: 1fr; */
         gap: 15px;
+    }
+    .work-text {
+        max-width: 70%;
     }
 
     .work-card {
         align-self: center !important;
     }
 }
+

@@ -66,3 +66,13 @@
     font-size: 14px;
     color: #bbb;
 }
+@media(max-width:900px){
+    .footer-container{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-start;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}

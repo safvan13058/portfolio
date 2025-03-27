@@ -113,3 +113,8 @@
 .more-projects button:hover {
     background:var(--primary-color);
 }
+@media(max-width:900px){
+    .portfolio{
+        width: 90%;
+    }
+}

@@ -175,3 +175,25 @@ button span {
 button:hover {
     background: var(  --button-hover);
 }
+@media(max-width:900px){
+    .contact-container {
+        flex-direction: column;
+        margin: 50px 5%;
+        width: 90%;
+
+    }
+    .portfolio-grid {
+        display: grid
+    ;
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    
+}
+@media(max-width:768px){
+    .contact-container{
+        padding: 10px;
+    }
+}
