@@ -1,0 +1,94 @@
+/* Work Process Container */
+.work-process {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+    /* background: #f8f8f8; */
+}
+
+/* Left Text Section */
+.work-text {
+    /* flex: 1; */
+    max-width: 40%;
+}
+
+.work-text h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--hero-text);
+}
+
+.work-text p {
+    font-size: 16px;
+    color:var(--text-color);
+    line-height: 1.5;
+}
+
+/* Right Grid Section */
+.work-cards {
+    width: 50%;
+    /* flex: 1; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Individual Work Cards */
+.work-card {
+    background:var(--navbar-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px var(--shadow-color);
+    text-align: left;
+    transition: 0.3s ease-in-out;
+}
+
+.work-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Icons */
+.icons {
+    font-size: 24px;
+    background: var(--contact-bg);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.work-card h4{
+    color:var(--hero-text);
+}
+.work-card p{
+    color:var(--text-color);
+}
+/* Staggered Layout Fix */
+.work-card:nth-child(1), 
+.work-card:nth-child(3) {
+    place-self: start;
+}
+
+.work-card:nth-child(2), 
+.work-card:nth-child(4) {
+    place-self: end;
+}
+/* Responsive */
+@media (max-width: 768px) {
+    .work-process {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .work-cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .work-card {
+        align-self: center !important;
+    }
+}

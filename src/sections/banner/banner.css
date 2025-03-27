@@ -1,0 +1,48 @@
+/* Banner Section */
+.banner {
+    background: var(--bannerbg); /* Dark Blue */
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Content Wrapper */
+.banner-content {
+    max-width: 600px;
+}
+
+/* Heading */
+.banner h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+.banner p {
+    font-size: 16px;
+    color: #a1a1a1;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.btn-primary {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #a044ff; /* Purple */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Button Hover */
+.btn-primary:hover {
+    background: #8000ff; /* Darker Purple */
+}

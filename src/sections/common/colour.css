@@ -1,0 +1,90 @@
+:root {
+    /* Navbar */
+    --primary-color: #6a0dad; /* Purple */
+    --secondary-color: #000000; /* Black */
+    --text-color: #555; /* Gray */
+    --navbar-bg: #ffffff; /* White */
+   
+    --hover-color: #888; /* Light Gray */
+    --button-bg: #a044ff; /* Bright Purple */
+    --button-hover: #8000ff; /* Darker Purple */
+    /* Hero Section */
+    --hero-bg: linear-gradient(to right, #f8f2ff, #e3f5ff);
+    --hero-text: #333;
+    --bg-gradient: linear-gradient(to right, #f8f2ff, #e3f5ff);
+    --hero-button: #a044ff;
+    --hero-button-hover: #8000ff;
+
+    /* About Section */
+    --about-bg: #f4f4f4;
+    --about-text: #444;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --bg-light: #ffffff;
+    
+    --boxcolor:#f7f7f7;
+    --boxhover:#f0e6ff;
+    /* Services Section */
+    --services-bg: #e3f5ff;
+    --services-text: #222;
+    /* banner section */
+    --bannerbg:#0d1b2a;
+    --inputcolor: #777;
+    /* Portfolio Section */
+    --portfolio-bg: #fff;
+    --portfolio-text: #333;
+
+    /* Contact Section */
+    --contact-bg: linear-gradient(to right, #6a0dad, #a044ff);
+    --contact-text: white;
+
+}
+
+/* 🌙 Dark Mode */
+.dark-mode {
+    /* Navbar */
+    --primary-color: #bb86fc; /* Light Purple */
+    --secondary-color: #ffffff; /* White */
+    --text-color: #f8f8f8; /* Light Gray */
+    --navbar-bg: #121212; /* Dark */
+   
+    --hover-color: #777; /* Medium Gray */
+    --button-bg: #bb86fc; /* Light Purple */
+    --button-hover: #3700b3; /* Dark Blue */
+
+    /* Hero Section */
+    --hero-bg: linear-gradient(to right, #1e1e2f, #121212);
+    --hero-text: #ffffff;
+    --hero-button: #bb86fc;
+    --hero-button-hover: #3700b3;
+    
+    /* About Section */
+    --about-bg: #222;
+    --about-text: #ddd;
+    --bg-light: #121212; /* Dark */
+    --shadow-color: rgba(225, 225, 225, 0.1);
+
+    /* Services Section */
+    --services-bg: #1e1e2f;
+    --services-text: #eee;
+     /* banner section */
+     --bannerbg:#1e1e2f;
+     --boxcolor:Black;
+     --boxhover:#1e1e2f;
+     --inputcolor:white;
+     --inputtextcolor:white;
+    /* Portfolio Section */
+    --portfolio-bg: #121212;
+    --portfolio-text: #fff;
+
+    /* Contact Section */
+    --contact-bg: linear-gradient(to right, #3700b3, #bb86fc);
+    --contact-text: #fff;
+}
+body {
+    transition: background-color 1s ease-in-out, color 1s ease-in-out;
+}
+.navbar {
+    transition: background-color 1s ease-in-out, color 1s ease-in-out;
+}
+
+

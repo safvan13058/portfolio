@@ -1,0 +1,68 @@
+.what-i-do {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 10%;
+  /* background: #f8f8f8; */
+}
+
+/* Left Section */
+.text-content {
+  width: 40%;
+}
+
+.text-content h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--hero-text);
+}
+
+.text-content p {
+  font-size: 16px;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.btn {
+  background:var(--button-bg);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: var(--button-hover);
+}
+
+/* Right Cards Section */
+.cards {
+    width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.what-card {
+  background: var( --navbar-bg);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px var(--shadow-color);
+  transition: border-color 0.3s ease-in-out, background 0.3s ease-in-out;
+  border-left: 4px solid transparent;
+  transition: .5s ease-in-out;
+}
+.what-card h3{
+   color: var(--hero-text);
+}
+.what-card p{
+    color:var(--text-color)
+
+}
+.what-card:hover {
+  border-left: 4px solid var(--hero-button);
+  transform: translateY(-5px);
+  /* background: rgba(160, 68, 255, 0.1); */
+}
