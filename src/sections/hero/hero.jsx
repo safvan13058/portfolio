@@ -1,6 +1,7 @@
 import React from "react";
 import "./hero.css";
-import profileImg from "../../images/image1.avif"; // Replace with actual image path
+// import profileImg from "../../images/image1.avif"; // Replace with actual image path
+import profileImg from "../../images/image1.jpg"; // Replace with actual image path
 
 const Hero = () => {
   return (
@@ -12,9 +13,8 @@ const Hero = () => {
             Hello, I’m <br /> <span>Mohamed Safvan Vp</span>
           </h1>
           <p>
-            I'm a Freelance <strong>UI/UX Designer and Developer</strong> based in
-            London, England. I strive to build immersive and beautiful web applications
-            through carefully crafted code and user-centric design.
+          I’m a <strong>Full Stack Developer and IoT </strong>  crafting smart web applications and intelligent hardware systems.
+          Passionate about building seamless digital experiences and robotics solutions that make a difference
           </p>
           <button className="hero-button">Say Hello!</button>
         </div>

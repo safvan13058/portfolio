@@ -5,10 +5,9 @@ const Banner = () => {
   return (
     <section className="banner">
       <div className="banner-content">
-        <h2>Do you have a Project Idea?</h2>
+        <h2>Have an Idea for a Web or IoT Project?</h2>
         <p>
-          There are many variations of passages of Lorem Ipsum available, but the
-          majority have suffered alteration.
+        I turn ideas into functional apps and smart, connected experiences — combining web development with real-world IoT solutions.
         </p>
         <a href="#contact" className="btn-primary">
           Let's work Together →

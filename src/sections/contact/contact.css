@@ -28,7 +28,7 @@
 
 .contact-info .info-box {
     display: flex;
-    width:60%;
+    width:70%;
     align-items: center;
     background:var(--boxcolor);
     padding: 15px;

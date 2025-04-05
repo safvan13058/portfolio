@@ -7,34 +7,30 @@ const WhatIDo = () => {
       <div className="text-content">
         <h2>What I do?</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus
-          arcu, varius eget velit non, laoreet imperdiet orci.
+        I bring ideas to life by blending software engineering with hardware innovation. From crafting dynamic web applications to building intelligent robotic systems, I design with purpose and precision.
         </p>
         <button className="btn">Say Hello!</button>
       </div>
 
       <div className="cards">
         <div className="what-card">
-          <h3>User Experience (UX)</h3>
+          <h3>Full Stack Development</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus
-            arcu, varius eget velit non, laoreet imperdiet orci.
+          Build scalable web applications with clean UI/UX, robust APIs, and efficient backend systems—from concept to cloud deployment.
           </p>
         </div>
 
         <div className="what-card">
-          <h3>User Interface (UI)</h3>
+          <h3>Embedded Systems & IoT</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus
-            arcu, varius eget velit non, laoreet imperdiet orci.
+          Design and develop smart devices using microcontrollers, sensors, and wireless communication to solve real-world problems.
           </p>
         </div>
 
         <div className="what-card">
-          <h3>Web Development</h3>
+          <h3>Robotics & Automation</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus
-            arcu, varius eget velit non, laoreet imperdiet orci.
+          Create autonomous or semi-autonomous systems by integrating control logic, hardware prototyping, and machine intelligence.
           </p>
         </div>
       </div>

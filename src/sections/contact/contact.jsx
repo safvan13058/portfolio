@@ -6,9 +6,9 @@ const ContactForm = () => {
   return (
     <div className="contact-container">
       <div className="contact-left">
-        <h2>Let’s discuss your Project</h2>
+        <h2>Let's Build Something Awesome Together</h2>
         <p>
-          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.
+        Whether it’s a web platform, smart device, or an autonomous robot — I’d love to hear about your project and see how I can help bring it to life.
         </p>
 
         <div className="contact-info">
@@ -16,21 +16,21 @@ const ContactForm = () => {
             <FaMapMarkerAlt className="icon" />
             <div>
               <p className="label">Address:</p>
-              <p>New Mexico 31134</p>
+              <p>Kottakkal,kerala,india</p>
             </div>
           </div>
           <div className="info-box">
             <FaEnvelope className="icon" />
             <div>
               <p className="label">My Email:</p>
-              <p>mymail@mail.com</p>
+              <p>mohamedsafvanvp@gmail.com</p>
             </div>
           </div>
           <div className="info-box">
             <FaPhoneAlt className="icon" />
             <div>
               <p className="label">Call Me Now:</p>
-              <p>00-1234 00000</p>
+              <p>+91 8086945415</p>
             </div>
           </div>
         </div>

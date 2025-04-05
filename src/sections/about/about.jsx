@@ -1,6 +1,7 @@
 import React from "react";
 import "./about.css";
-import img from "../../images/image1.avif"
+// import img from "../../images/image1.avif"
+import img from "../../images/image2.jpg"
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaBehance } from "react-icons/fa";
 
 const About = () => {
@@ -22,16 +23,12 @@ const About = () => {
 
                     {/* Text Content */}
                     <div className="about-text">
-                        <h2>I am a Professional User Experience Designer</h2>
+                        <h2>Full Stack Developer with a Passion for IoT</h2>
                         <p>
-                            I design and develop services for customers specializing
-                            in creating stylish, modern websites, web services, and
-                            online stores. My passion is to design digital user
-                            experiences.
+                        I build smart, scalable solutions—from full-featured web apps to embedded systems. My mission is to create seamless digital experiences and intelligent devices that solve real-world problems.
                         </p>
                         <p>
-                            I design and develop services for customers specializing
-                            in creating stylish, modern websites, and web services.
+                        With a strong background in both software and hardware, I bridge the gap between web technologies and robotics to bring innovative ideas to life
                         </p>
 
                         {/* Buttons */}
