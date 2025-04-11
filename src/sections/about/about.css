@@ -143,17 +143,17 @@
 }
 /* Responsive */
 @media (max-width: 768px) {
-    .about-container .about-card {
+    /* .about-container .about-card {
         display: flex;
         flex-direction: column ;
         gap: 20px;
         /* height: fit-content; */
         /* text-align: center; */
-    }
-    .about-card .profile{
+    /* } */
+    /* .about-card .profile{
         width: 100%;
         align-items: center;
-    }
+    }  */
     .social-icons {
         /* position: static; */
         /* transform: none; */
