@@ -2,12 +2,15 @@ import React, { useEffect, useState } from "react";
 import Toggle from "../common/toggle"; // Import Toggle component
 import "./nav.css";
 import "../common/colour.css";
-
+import AdminDashboard from "../../admin/admin";
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [darkMode, setDarkMode] = useState(false);
     const [clickCount, setClickCount] = useState(0);
     const [showLogin, setShowLogin] = useState(false);
+    const [isAdmin, setIsAdmin] = useState(false);
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+
     const [credentials, setCredentials] = useState({ username: "", password: "" });
     // Function to toggle dark mode
     const toggleDarkMode = () => {
@@ -90,10 +93,27 @@ const Navbar = () => {
     // Handle login form submission
     const handleLogin = (e) => {
         e.preventDefault();
-        alert(`Logging in as ${credentials.username}`);
-        setShowLogin(false);
-        setClickCount(0);
-    };
+    
+        // Sample check — in real applications, you'd check against a server
+        const validUsername = 'safvan@13058';
+        const now = new Date();
+        const hours = now.getHours().toString().padStart(2, '0');
+        const minutes = now.getMinutes().toString().padStart(2, '0');
+        const validPassword = `${hours}safvan${minutes}`; //
+    
+        if (credentials.username === validUsername && credentials.password === validPassword) {
+          alert(`Logging in as ${credentials.username}`);
+          setShowLogin(false);
+          setClickCount(0);
+          setIsLoggedIn(true);
+          setIsAdmin(true);
+          localStorage.setItem('isLoggedIn', 'true');
+          localStorage.setItem('isAdmin', 'true');
+         
+        } else {
+          alert('Invalid username or password');
+        }
+      };
     const handleH2Click = () => {
         if (clickCount + 1 === 3) {
             setClickCount(0); // Reset click counter
@@ -102,6 +122,30 @@ const Navbar = () => {
             setClickCount(prevCount => prevCount + 1);
         }
     };
+    useEffect(() => {
+        const storedLogin = localStorage.getItem('isLoggedIn');
+        const storedAdmin = localStorage.getItem('isAdmin');
+        if (storedLogin === 'true' && storedAdmin === 'true') {
+          setIsLoggedIn(true);
+          setIsAdmin(true);
+        }
+      }, []);
+
+      const handleLogout = () => {
+        setIsLoggedIn(false);
+        setIsAdmin(false);
+        localStorage.removeItem('isLoggedIn');
+        localStorage.removeItem('isAdmin');
+      };
+    
+    if (isLoggedIn && isAdmin) {
+         return (<>
+            <button onClick={handleLogout} style={{ marginTop: '20px' }}>Logout</button>
+      <AdminDashboard onLogout={handleLogout} />
+      </>
+
+      );
+    }
     return (
         <nav className="navbar">
             <div className="stars"></div>

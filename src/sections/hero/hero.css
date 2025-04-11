@@ -97,9 +97,9 @@
     .hero {
         padding: 80px 5%;
     }
-    .hero-content {
+    /* .hero-content {
         /* width: 90%; */
-    }
+    /* } */
     .hero-text {
         max-width: 100%;
     }    
@@ -121,7 +121,8 @@
         max-width: 100%;
     }
     .hero-content {
-        width: 50%;
+        width: 100%;
+        align-items: center;
     }
 
     .hero-image {

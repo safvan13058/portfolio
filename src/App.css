@@ -74,7 +74,11 @@ body {
   font-size: 14px;
   margin-top: 5px;
 }
-
+@media(max-width:769px){
+  .section {
+    min-height:fit-content;
+  }
+}
 @media(max-width:400px){
   .section {
     min-height:fit-content;

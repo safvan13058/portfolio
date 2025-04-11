@@ -125,12 +125,7 @@
     background: var( --button-bg);
     color: var(--text-light);
 }
-@media (max-width: 900px) {
-    .about-container{
-        width: 90%;
-    }
-    
-}
+
 @media (max-width: 900px) {
     .about-container{
         width: 90%;
@@ -148,11 +143,17 @@
 }
 /* Responsive */
 @media (max-width: 768px) {
-    .about-container {
-        flex-direction: column;
-        text-align: center;
+    .about-container .about-card {
+        display: flex;
+        flex-direction: column ;
+        gap: 20px;
+        /* height: fit-content; */
+        /* text-align: center; */
     }
-    
+    .about-card .profile{
+        width: 100%;
+        align-items: center;
+    }
     .social-icons {
         /* position: static; */
         /* transform: none; */
